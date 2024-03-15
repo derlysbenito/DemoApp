@@ -17,6 +17,7 @@ class HomeViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.becomeFirstResponder()
+        setupNavigationBar()
         setupTextField()
         setupTableView()
         presenter?.doGetInfoRequest()
@@ -28,6 +29,10 @@ class HomeViewController: UIViewController{
     }
     
     //MARK: - UI
+    
+    private func setupNavigationBar(){
+        self.title = "Pokemones"
+    }
     
     private func setupTableView(){
         tableView.delegate = self

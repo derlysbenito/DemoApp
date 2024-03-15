@@ -6,6 +6,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class DetailViewController: UIViewController{
     
@@ -19,9 +20,15 @@ class DetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavigationBar()
         presenter?.doGetPokemonDetail()
         
+    }
+    
+    //MARK: - UI
+    
+    private func setupNavigationBar(){
+        self.title = "Detalle Pokemon"
     }
 }
 
@@ -30,6 +37,8 @@ class DetailViewController: UIViewController{
 extension DetailViewController: DetailViewProtocol{
     
     func refreshScreenData(model: PokemonDetail?) {
+        guard let imageURL = model?.sprites?.frontDefault else { return }
+        imageViewPokemon.sd_setImage(with: URL(string: imageURL))
         labelWith.text = "weight: \(model?.weight ?? 0)"
         labelHeight.text = "height: \(model?.height ?? 0)"
     }
