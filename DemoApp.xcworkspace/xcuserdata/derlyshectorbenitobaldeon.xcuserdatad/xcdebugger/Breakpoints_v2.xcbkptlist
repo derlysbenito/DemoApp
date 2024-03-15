@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C3D8BC9E-F81C-4A80-A624-2DE64538CCD2"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C24A269-E6B9-4A8A-AC1F-427F1757C5C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoApp/DBBDataSource/DataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getPokemonDetail(identifier:callbackHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C24A269-E6B9-4A8A-AC1F-427F1757C5C5 - 436c170b03d16f9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoApp.DataSource.getPokemonDetail(identifier: Swift.String, callbackHandler: (Alamofire.DataResponse&lt;DemoApp.PokemonDetail, Alamofire.AFError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derlyshectorbenitobaldeon/Desktop/DemoApp/DemoApp/DBBDataSource/DataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "2C24A269-E6B9-4A8A-AC1F-427F1757C5C5 - f1dfc98900aee8cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;DemoApp.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in DemoApp.DataSource.getPokemonDetail(identifier: Swift.String, callbackHandler: (Alamofire.DataResponse&lt;DemoApp.PokemonDetail, Alamofire.AFError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derlyshectorbenitobaldeon/Desktop/DemoApp/DemoApp/DBBDataSource/DataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39EFB05E-BAFF-423E-9A41-4459794C3569"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoApp/DBBHome/Module/Detail/View/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D3803EC-0428-4E79-B69C-72109C8A63C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoApp/DBBHome/Module/Detail/Presenter/DetailPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "doGetPokemonDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D3803EC-0428-4E79-B69C-72109C8A63C5 - a4d21fb69324ce37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoApp.DetailPresenter.doGetPokemonDetail() -&gt; ()"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derlyshectorbenitobaldeon/Desktop/DemoApp/DemoApp/DBBHome/Module/Detail/Presenter/DetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "3D3803EC-0428-4E79-B69C-72109C8A63C5 - 6a324cd0f0be8ced"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;DemoApp.PokemonDetail, Alamofire.AFError&gt;) -&gt; () in DemoApp.DetailPresenter.doGetPokemonDetail() -&gt; ()"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/derlyshectorbenitobaldeon/Desktop/DemoApp/DemoApp/DBBHome/Module/Detail/Presenter/DetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

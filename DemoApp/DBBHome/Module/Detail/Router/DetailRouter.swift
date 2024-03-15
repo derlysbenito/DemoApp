@@ -27,6 +27,7 @@ extension DetailRouter: DetailRouterProtocol{
         guard let vc = mainStoryBoard.instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController else { return UIViewController() }
         
         let presenter = DetailPresenter()
+        presenter.interactor = DetailInteractor(dataSource: DataSource.shared)
         presenter.router = self
         presenter.view = vc
         presenter.model = model

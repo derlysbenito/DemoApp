@@ -13,12 +13,34 @@ class DetailPresenter{
     var model: PokemonResults?
     weak var view: DetailViewProtocol?
     
+    private var pokemonDetailModel: PokemonDetail?
+    
 }
 
 extension DetailPresenter: DetailPresenterProtocol{
     
-    func viewDidLoad() {
-        view?.refreshScreenData(model: self.model)
+    //MARK: - DataSource
+    
+    func doGetPokemonDetail() {
+        interactor?.getPokemonDetail(identifier: model?.name ?? "", onCompletion: { [weak self] response in
+            switch response.result{
+            case .success(let dataInfo):
+                self?.pokemonDetailModel = dataInfo
+                self?.doSuccessGetPokemonDetail()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        })
     }
+    
+    func doSuccessGetPokemonDetail() {
+        view?.refreshScreenData(model: pokemonDetailModel)
+    }
+    
+    func doErrorGetPokemonDetail() {
+        
+    }
+    
+    
     
 }

@@ -18,8 +18,8 @@ protocol HomePresenterProtocol: AnyObject{
     var view: HomeViewProtocol? { get set }
     
     func doGetInfoRequest()
-    func didReceivedInfoSuccess(response: [PokemonResults])
-    func didReceivedInfoError()
+    func doSuccessGetInfoRequest(response: [PokemonResults])
+    func doErrorGetInfoRequest()
     func infoItem(index: Int) -> PokemonResults
     
     func numberOfRows() -> Int

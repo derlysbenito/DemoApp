@@ -17,16 +17,18 @@ protocol DetailPresenterProtocol: AnyObject{
     var interactor: DetailInteractorProtocol? { get set }
     var model: PokemonResults? { get set }
     
-    func viewDidLoad()
+    func doGetPokemonDetail()
+    func doSuccessGetPokemonDetail()
+    func doErrorGetPokemonDetail()
+}
+
+protocol DetailInteractorProtocol: AnyObject{
+    func getPokemonDetail(identifier: String, onCompletion: @escaping PokemonDetailResultError)
 }
 
 protocol DetailViewProtocol: AnyObject{
     var presenter: DetailPresenterProtocol? { get set }
     
-    func refreshScreenData(model: PokemonResults?)
-}
-
-protocol DetailInteractorProtocol: AnyObject{
-    
+    func refreshScreenData(model: PokemonDetail?)
 }
 

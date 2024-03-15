@@ -26,7 +26,7 @@ extension HomePresenter: HomePresenterProtocol{
             switch response.result{
             case .success(let dataInfo):
                 if let data = dataInfo.results{
-                    self?.didReceivedInfoSuccess(response: data)
+                    self?.doSuccessGetInfoRequest(response: data)
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -34,13 +34,13 @@ extension HomePresenter: HomePresenterProtocol{
         })
     }
     
-    func didReceivedInfoSuccess(response: [PokemonResults]) {
+    func doSuccessGetInfoRequest(response: [PokemonResults]) {
         infoModelArray = response
         infoModelArrayFilter = response
         view?.reloadTableView()
     }
     
-    func didReceivedInfoError() {
+    func doErrorGetInfoRequest() {
         
     }
     

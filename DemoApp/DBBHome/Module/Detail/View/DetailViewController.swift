@@ -11,26 +11,27 @@ class DetailViewController: UIViewController{
     
     var presenter: DetailPresenterProtocol?
     
-    @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var userIdLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var bodyLabel: UILabel!
+    @IBOutlet weak var imageViewPokemon: UIImageView!
+    @IBOutlet weak var labelHeight: UILabel!
+    @IBOutlet weak var labelWith: UILabel!
+    
+    //MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter?.viewDidLoad()
+        presenter?.doGetPokemonDetail()
+        
     }
 }
 
+//MARK: - DetailViewProtocol
+
 extension DetailViewController: DetailViewProtocol{
-    func refreshScreenData(model: PokemonResults?) {
-        /*
-         idLabel.text = "\(model?.id ?? 0)"
-         userIdLabel.text = "\(model?.userId ?? 0)"
-         titleLabel.text = model?.title
-         bodyLabel.text = model?.body
-         */
-        
+    
+    func refreshScreenData(model: PokemonDetail?) {
+        labelWith.text = "weight: \(model?.weight ?? 0)"
+        labelHeight.text = "height: \(model?.height ?? 0)"
     }
+
 }
