@@ -19,7 +19,7 @@ class HomeInteractor{
 extension HomeInteractor: HomeInteractorProtocol{
     
     func getInfoRequest(onCompletion: @escaping PokemonsResultError) {
-        dataSource?.requestGetInfo { response in
+        dataSource?.getPokemons { response in
             onCompletion(response)
         }
     }

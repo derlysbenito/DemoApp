@@ -16,7 +16,7 @@ class DataSource{
     
     static let shared = DataSource()
     
-    func requestGetInfo(callbackHandler: @escaping PokemonsResultError){
+    func getPokemons(callbackHandler: @escaping PokemonsResultError){
         
         AF.request("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0", method: .get).responseDecodable(of: MainResponse.self) { (response) in
             callbackHandler(response)
